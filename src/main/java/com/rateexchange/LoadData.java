@@ -34,7 +34,7 @@ import java.util.concurrent.ForkJoinPool;
  * For testing purposes only
  */
 @Configuration
-public class LoadDailyData {
+public class LoadData {
 
     @Autowired
     BaseRateMapper baseRateMapper;
@@ -42,7 +42,7 @@ public class LoadDailyData {
     @Autowired
     RateExchangeMapper rateExchangeMapper;
 
-    private static final Logger logger = LoggerFactory.getLogger(LoadDailyData.class);
+    private static final Logger logger = LoggerFactory.getLogger(LoadData.class);
 
     @EventListener(ApplicationReadyEvent.class)
     @Async("threadPoolTaskExecutor")
